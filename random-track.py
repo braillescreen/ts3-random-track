@@ -19,7 +19,7 @@ if minimumLines=='' or maximumLines=='':
 lines=random.randint(int(minimumLines),int(maximumLines))
 #Create our track's data.
 for i in range(lines):
-	trackData+=str(random.randint(0,8))+" "+str(random.randint(0,4))+" "+str(random.randint(5000,50000))+"\n"
+	trackData+=str(random.randint(0,8))+" "+str(random.randint(0,4))+" "+str(random.randint(0,11))+" "+str(random.randint(5000,50000))+"\n"
 print("Successfully wrote "+str(lines)+" lines for your track.")
 pyperclip.copy(trackData)
 print("Successfully copied the track data to the clipboard. Press enter to exit.")
